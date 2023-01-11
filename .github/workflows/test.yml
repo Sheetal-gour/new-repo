@@ -42,3 +42,13 @@ jobs:
           else
             echo no hello
           fi
+  
+  run_shell:
+    name: shell script
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: shell
+        run: |
+         x = $(pwd)
+         ls $x
