@@ -61,4 +61,6 @@ jobs:
       - name: checkin
         uses: actions/checkout@v2
       - name: ls
-        run: ls 
+        run: ls -ltr 
+      - name: run script
+        run: ./test.sh
