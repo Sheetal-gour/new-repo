@@ -12,16 +12,24 @@ jobs:
     
     steps:
       
-      - name: run shell
+      - name: run shell scripting
         run: |
           #!/bin/bash
 
-          echo 'what is your age ??'
-          read age
+          echo Test for loop
+          for i in {1..10}
+          do
+          echo "Print $i"
+          done
+          
+      - name: run while loop
+        run: |
+          #!/bin/bash
 
-          if [ $age -ge 18 ]
-          then 
-            echo "You are eligible to vote"
-          else
-            echo "You are not eligible to vote"
-          fi
+          echo Test while loop
+          count=1
+          while [ $count -le 10 ]
+          do
+          echo "number is $i"
+          let i++
+          done
