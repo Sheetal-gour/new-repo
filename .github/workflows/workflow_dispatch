@@ -1,0 +1,26 @@
+name: Practice workflow dispatch
+
+on: [workflow_dispatch]
+
+jobs:
+  job1:
+    name: printing another shell 
+    runs-on: ubuntu-latest
+    
+    steps: 
+    - name: case script
+      run: |
+        
+        #!/bin/bash
+        
+        echo Executing workflow dispatch
+        i = 3
+        
+        case $i in
+          1) echo hello
+          2)date;;
+          3)pwd;;
+          *) echo invalid
+          
+        esac
+      
