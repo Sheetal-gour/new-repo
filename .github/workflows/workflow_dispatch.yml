@@ -17,7 +17,6 @@ jobs:
         i=3
         
         case $i in
-          1) echo hello
           2)date;;
           3)pwd;;
           *) echo invalid
