@@ -51,4 +51,4 @@ jobs:
       - name: shell
         run: pwd
       - name: ls the directory
-        run: ls /home/runner/work/new-repo
+        run: ls /home/runner/work/new-repo/new-repo
