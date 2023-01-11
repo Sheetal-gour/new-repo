@@ -1,4 +1,4 @@
-name: on one branch
+name: shell workflow
 
 on:
   push:
