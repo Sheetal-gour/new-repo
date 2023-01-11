@@ -27,8 +27,8 @@ jobs:
           #!/bin/bash
 
           echo Test while loop
-          count=1
-          while [ $count -le 10 ]
+          i=1
+          while [ $i -le 10 ]
           do
           echo "number is $i"
           let i++
