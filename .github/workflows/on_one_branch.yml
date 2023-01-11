@@ -16,12 +16,22 @@ jobs:
         run: |
          #!/bin/bash
         
-          echo 'what is your age ??'
-          read age
+          echo Executing for loop
 
-          if [ $age -ge 18 ]
-          then 
-            echo "You are eligible to vote"
-          else
-            echo "You are not eligible to vote"
-          fi
+          for i in {1..10}
+          do
+          echo Number is $i
+          done
+          
+      - name: run while loop
+        run: |
+         #!/bin/bash
+         
+          echo Eecuting while loop
+          count=1
+          while [ $count -le 10 ]
+          do
+          echo "Number is $count"
+          let count++
+          done
+          
