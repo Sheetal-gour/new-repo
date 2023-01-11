@@ -31,3 +31,10 @@ jobs:
         
       - name: present working directory
         run: pwd
+        
+      - name: run shell script
+        shell: |
+          count=10
+          if [ $count -ge 10 ]
+            echo hello
+          fi
