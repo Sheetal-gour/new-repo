@@ -1,27 +1,27 @@
 name: on one branch
 
-on:
-  branches:
-    push:
+on: 
+  push:
+    branches:
       feature-1
       
 jobs:
-  printing shell script:
+  printing_shell_script:
     name: Running shell script
     runs-on: ubuntu-latest
     
     steps:
       
-      name: run shell
-      run: |
-        #!/bin/bash
-        
-        echo 'what is your age ??'
-        read age
-        
-        if [ $age -ge 18 ]
-        then 
-          echo "You are eligible to vote"
-        else
-          echo "You are not eligible to vote"
-        fi
+      - name: run shell
+        run: |
+          #!/bin/bash
+
+          echo 'what is your age ??'
+          read age
+
+          if [ $age -ge 18 ]
+          then 
+            echo "You are eligible to vote"
+          else
+            echo "You are not eligible to vote"
+          fi
