@@ -27,7 +27,7 @@ jobs:
           cd folder
         
       - name: make file
-        run: index.html
+        run: touch index.html style.css
         
       - name: cases
         run: |
