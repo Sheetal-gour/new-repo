@@ -49,6 +49,4 @@ jobs:
     
     steps:
       - name: shell
-        run: |
-         x = $(pwd)
-         ls $x
+        run: pwd
