@@ -33,7 +33,8 @@ jobs:
         run: pwd
         
       - name: run shell script
-        shell: |
+        run: |
+          #!/bin/bash
           count=10
           if [ $count -ge 10 ]
             echo hello
