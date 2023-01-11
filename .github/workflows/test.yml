@@ -37,5 +37,6 @@ jobs:
           #!/bin/bash
           count=10
           if [ $count -ge 10 ]
+          then
             echo hello
           fi
