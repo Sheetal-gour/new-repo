@@ -29,6 +29,5 @@ jobs:
       - name: make file
         run: touch index.html style.css
         
-      - name: cases
-        run: |
-          echo Hello world
+      - name: present working directory
+        run: pwd
