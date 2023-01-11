@@ -14,7 +14,7 @@ jobs:
         #!/bin/bash
         
         echo Executing workflow dispatch
-        i = 3
+        i=3
         
         case $i in
           1) echo hello
