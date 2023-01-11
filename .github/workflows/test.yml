@@ -39,4 +39,6 @@ jobs:
           if [ $count -ge 10 ]
           then
             echo hello
+          else
+            echo no hello
           fi
